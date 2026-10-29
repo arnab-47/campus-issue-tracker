@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Issue Tracker — Sign In</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="dashboard.html" class="brand">Campus Issue Tracker</a>
+      <div class="nav-links">
+        <a href="signin.html" class="active">Sign In</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="dashboard.html">Dashboard (table)</a>
+        <a href="dashboard-cards.html">Dashboard (cards)</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="auth-wrap">
+      <section class="auth-card">
+        <h1>Sign in</h1>
+        <p class="subtext">Welcome back — report an issue or check on one you raised.</p>
+
+        <form id="signin-form" novalidate>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="riya_sharma" required minlength="4" />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required minlength="6" />
+          </div>
+
+          <p class="error-text" id="error"></p>
+
+          <button type="submit" class="btn-primary">Sign In</button>
+        </form>
+
+        <p class="subtext" style="margin-top: 1.25rem; margin-bottom: 0;">
+          New here? <a href="signup.html" style="color:#3452e1; font-weight:600;">Create an account</a>
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Campus Issue Tracker — Day 1 Hands-on</p>
+  </footer>
+
+  <script src="../js/signin.js"></script>
+</body>
+</html>

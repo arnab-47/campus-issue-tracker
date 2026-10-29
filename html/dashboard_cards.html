@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Issue Tracker — Dashboard (Cards)</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="dashboard.html" class="brand">Campus Issue Tracker</a>
+      <div class="nav-links">
+        <a href="signin.html">Sign In</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="dashboard.html">Dashboard (table)</a>
+        <a href="dashboard_cards.html" class="active">Dashboard (cards)</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="filter-bar">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="Plumbing">Plumbing</button>
+      <button class="filter-btn" data-category="Internet">Internet</button>
+      <button class="filter-btn" data-category="Electrical">Electrical</button>
+      <button class="filter-btn" data-category="Food">Food</button>
+    </div>
+
+    <section id="issues-grid" class="issues-grid">
+      <!-- filled in by app.js -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Campus Issue Tracker — Day 1 Hands-on: CSS Grid card layout + vanilla-JS filter</p>
+  </footer>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>

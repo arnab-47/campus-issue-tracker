@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Tracker App - Sign Up</title>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="dashboard.html" class="brand">Capmus Issue Tracker</a>
+            <div class="nav-links">
+                <a href="signup.html">Sign UP</a>
+                <a href="signin.html">Sign IN</a>
+                <a href="dashboard.html">Dashboard (list)</a>
+                <a href="dashboard_cards.html">Dashboard (table)</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="auth-wrap">
+            <section class="auth-card">
+                <h1>Create your Account</h1>
+                <p class="subtext">Report issues. Track fixes. Keep campus running.</p>
+                <form id="signup-form" novalidate>
+
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" class="fullname" name="fullname" placeholder="Enter your name" required minlength="2">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="username">User Name</label>
+                        <input type="text" id="username" class="username" name="username" placeholder="Enter your username" required minlength="4">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Enter College Email</label>
+                        <input type="email" id="email" class="email" name="email" placeholder="Enter your Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="college-id">College ID</label>
+                        <input type="text" id="college-id" name="college-id" required minlength="6">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Register AS</label>
+                        <select id="role" name="role">
+                            <option value="" disabled selected>Choose a role</option>
+                            <option value="student">Student</option>
+                            <option value="admin">Hostel Admin</option>
+                        </select>
+                    </div>
+
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required minlength="6" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required minlength="6" />
+                        </div>
+
+                        <p class="error-text" id="error"></p>
+
+                        <button type="submit" class="btn-primary">Create Account</button>
+
+                    </form>
+
+                    <p class="subtext" style="margin-top: 1.25rem; margin-bottom: 0;">
+                        Already have an account? <a href="signin.html" style="color:#3452e1; font-weight:600;">Sign in</a>
+                    </p>
+
+
+
+                </section>
+
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2026 Campus Issue Tracker — Day 1 Hands-on</p>
+        </footer>
+    </body>
+
+    <script src="../js/dom-events.js"></script>
+
+</html>
+
+                

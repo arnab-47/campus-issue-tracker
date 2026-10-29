@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Issue Tracker — Dashboard (Table)</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="dashboard.html" class="brand">Campus Issue Tracker</a>
+      <div class="nav-links">
+        <a href="signin.html">Sign In</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="dashboard.html" class="active">Dashboard (table)</a>
+        <a href="dashboard_cards.html">Dashboard (cards)</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="issues-section">
+      <h2>Reported Issues</h2>
+      <table class="issues-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Status</th>
+            <th>Votes</th>
+            <th>Reported By</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Leaking tap in Block C washroom</td>
+            <td>Plumbing</td>
+            <td><span class="status open">Open</span></td>
+            <td>12</td>
+            <td>riya_sharma</td>
+          </tr>
+          <tr>
+            <td>Wi-Fi down on 3rd floor, Hostel 2</td>
+            <td>Internet</td>
+            <td><span class="status in-progress">In Progress</span></td>
+            <td>27</td>
+            <td>arjun_k</td>
+          </tr>
+          <tr>
+            <td>Broken tube light, Room 214</td>
+            <td>Electrical</td>
+            <td><span class="status resolved">Resolved</span></td>
+            <td>4</td>
+            <td>meera_p</td>
+          </tr>
+          <tr>
+            <td>Mess food quality complaint</td>
+            <td>Food</td>
+            <td><span class="status open">Open</span></td>
+            <td>19</td>
+            <td>karan_v</td>
+          </tr>
+          <tr>
+            <td>Router needs restart, Hostel 1</td>
+            <td>Internet</td>
+            <td><span class="status open">Open</span></td>
+            <td>8</td>
+            <td>sana_q</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Campus Issue Tracker — Day 1 Hands-on: HTML5 table markup</p>
+  </footer>
+</body>
+</html>
